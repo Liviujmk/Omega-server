@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  <%- include('../../head') %>
+
+<body>
+  <header>
+
+    <div class="header-area header-sticky">
+      <div class="main-header">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="https://preview.colorlib.com/theme/marian/assets/img/logo/logo.png" alt=""
+                    data-pagespeed-url-hash="1320326794"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this)">
+                </a>
+                <i class="fas fa-bars hamburger-menuicon" onclick="openNav()"></i>
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-8">
+
+              <div class="main-menu f-right d-none d-lg-block">
+                <nav>
+                  <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li class="active"><a href="blogs.html">Blog</a></li>
+                    <li><a href="#">Pages</a>
+                      <ul class="submenu">
+                        <li><a href="tos.html">Terms of service</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2">
+
+              <div class="header-btn">
+                <a href="#exampleModal" class="btn btn1 d-none d-lg-block btn-prop" data-toggle="modal"
+                  data-target="#exampleModal">Book Online</a>
+              </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+              <div class="menu-grid">
+                  <div class="menu-header">
+                      <div class="nav-logo">
+                          <img src="https://preview.colorlib.com/theme/marian/assets/img/logo/logo.png"
+                              alt="" data-pagespeed-url-hash="1320326794"
+                              onload="pagespeed.CriticalImages.checkImageForCriticality(this)">
+                      </div>
+                      <button name="button" type="button" class="close-button" onclick="closeNav()"
+                          id="mybutton">
+                          <i class="fas fa-times"></i>
+                      </button>
+                  </div>
+                  <div class="menu-content">
+                      <ul class="menu-items">
+                          <li class="menu-items__item">
+                              <a name="button" type="button" class="item i1" href="index.html">Home</a>
+                          </li>
+                          <li class="menu-items__item">
+                              <a name="button" type="button" class="item i1" href="about.html">About</a>
+                          </li>
+                          <li class="menu-items__item">
+                              <a name="button" type="button" class="item i1" href="services.html">Services</a>
+                          </li>
+                          <li class="menu-items__item">
+                              <a name="button" type="button" class="item i1" href="blogs.html">Our Blog</a>
+                          </li>
+                          <li class="menu-items__item">
+                              <a name="button" type="button" class="item i1" data-toggle="collapse"
+                                  href="#collapseExample" role="button" aria-expanded="false"
+                                  aria-controls="collapseExample">Pages
+                                  <i class="fas fa-chevron-down float-right"></i>
+                              </a>
+
+                              <div class="collapse" id="collapseExample">
+                                  <div class="card card-body">
+                                      <a href="tos.html">Terms of Service</a>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="menu-items__item">
+                              <a name="button" type="button" class="item i1" href="contact.html">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <div class="breadcrumb-section">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="breadcrumb-text">
+          <div class="bt-option">
+            <h2>Our blog</h2>
+            <a href="./index.html">Home</a>
+            <span>Our blog</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="b_area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mb-5 mb-lg-0 none">
+          <div class="b_left_sidebar">
+            <% articles.forEach(article => { %>
+              <article class="b_item">
+                <div class="b_item_img">
+                  <img class="card-img border-radius_top_left_right--img" src="img/i1.png" alt=""
+                    data-pagespeed-url-hash="74081825" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <a href="#" class="b_item_date"><%= article.createdAt.toLocaleDateString() %></a>
+                </div>
+                <div class="b_details border-radius_bottom_left_right--img">
+                  <a class="d-inline-block" href="Blogs/<%= article.slug %>">
+                    <h2><%= article.title %></h2>
+                  </a>
+                  <p><%= article.description %></p>
+                  <ul class="b-info-link">
+                    <li><a href="#"><i class="fa fa-user"></i><%= article.tag %></a></li>
+                  </ul>
+                </div>
+              </article>
+            <% }) %>
+            <!--<nav class="b-pagination justify-content-center d-flex">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a href="#" class="page-link" aria-label="Previous">
+                    <i class="ti-angle-left"></i>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item active">
+                  <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link" aria-label="Next">
+                    <i class="ti-angle-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%- include('../../footer') %>
+</body>
+
+</html>

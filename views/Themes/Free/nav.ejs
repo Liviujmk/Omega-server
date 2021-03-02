@@ -1,0 +1,141 @@
+<header id="header">
+    <div class="header-area header-sticky" id="header-editor">
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="logo">
+                            <a href="/Free/index">
+                                <img src="https://preview.colorlib.com/theme/marian/assets/img/logo/logo.png" alt="" data-pagespeed-url-hash="1320326794" onload="pagespeed.CriticalImages.checkImageForCriticality(this)" />
+                            </a>
+                            <i class="fas fa-bars hamburger-menuicon" onclick="openNav()"></i>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="main-menu f-right d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li class="active"><a href="/Free/index">Home</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="services.html">Service</a></li>
+                                    <li><a href="/blogs">Blog</a></li>
+                                    <li>
+                                        <a href="#">Pages</a>
+                                        <ul class="submenu">
+                                            <li><a href="tos.html">Terms of service</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="header-btn">
+                            <a href="#exampleModal" class="btn btn1 d-none d-lg-block btn-prop" data-toggle="modal" data-target="#exampleModal">Book Online</a>
+                        </div>
+                    </div>
+                    <div class="nav-menu" id="nav-menu">
+                        <div class="menu-grid">
+                            <div class="menu-header">
+                                <div class="nav-logo">
+                                    <img src="https://preview.colorlib.com/theme/marian/assets/img/logo/logo.png" alt="" data-pagespeed-url-hash="1320326794" onload="pagespeed.CriticalImages.checkImageForCriticality(this)" />
+                                </div>
+                                <button name="button" type="button" class="close-button" onclick="closeNav()" id="mybutton">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="menu-content">
+                                <ul class="menu-items">
+                                    <li class="menu-items__item">
+                                        <a name="button" type="button" class="item i1" href="/Free/index">Home</a>
+                                    </li>
+                                    <li class="menu-items__item">
+                                        <a name="button" type="button" class="item i1" href="/about">About</a>
+                                    </li>
+                                    <li class="menu-items__item">
+                                        <a name="button" type="button" class="item i1" href="services.html">Services</a>
+                                    </li>
+                                    <li class="menu-items__item">
+                                        <a name="button" type="button" class="item i1" href="blogs.html">Our Blog</a>
+                                    </li>
+                                    <li class="menu-items__item">
+                                        <a name="button" type="button" class="item i1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Pages
+                                            <i class="fas fa-chevron-down float-right"></i>
+                                        </a>
+
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body">
+                                                <a href="tos.html">Terms of Service</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-items__item">
+                                        <a name="button" type="button" class="item i1" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="booking-form">
+                    <h3>Book your room</h3>
+                    <form action="#">
+                        <div class="check-date">
+                            <label for="date-in">Check In:</label>
+                            <input type="date" class="date-input hasDatepicker" id="date-in" />
+                        </div>
+                        <div class="check-date">
+                            <label for="date-out">Check Out:</label>
+                            <input type="date" class="date-input hasDatepicker" id="date-out" />
+                        </div>
+                        <div class="select-option">
+                            <label for="guest">Guests:</label>
+                            <select id="guest" style="display: none;">
+                                <option value="">2 Adults</option>
+                                <option value="">3 Adults</option>
+                            </select>
+                            <div class="nice-select" tabindex="0">
+                                <span class="current">2 Adults</span>
+                                <ul class="list">
+                                    <li data-value="" class="option selected">2 Adults</li>
+                                    <li data-value="" class="option">3 Adults</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-option">
+                            <label for="room">Room:</label>
+                            <select id="room" style="display: none;">
+                                <option value="">1 Room</option>
+                                <option value="">2 Room</option>
+                            </select>
+                            <div class="nice-select" tabindex="0">
+                                <span class="current">1 Room</span>
+                                <ul class="list">
+                                    <li data-value="" class="option selected">1 Room</li>
+                                    <li data-value="" class="option">2 Room</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-prop">Check Availability</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

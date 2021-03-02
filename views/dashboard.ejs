@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="/static/dash/css/styles-structure--orientation.css" />
+    <link rel="stylesheet" href="/static/dash/css/styles-components.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>Sidebar sub menus</title>
+  </head>
+  <body id="body-pd" class="body-pd">
+    <div class="l-navbar expander" id="navbar">
+      <nav class="nav">
+        <div>
+          <div class="nav__brand">
+            <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+            <a href="#" class="nav__logo">Bedimcode</a>
+          </div>
+          <div class="nav__list">
+            <a href="#" class="nav__link active">
+              <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Home</span>
+            </a>
+
+            <div class="nav__link collapse">
+              <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Apps</span>
+
+              <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+              <ul class="collapse__menu">
+                <a href="/dashboard/apps" class="collapse__sublink">Data</a>
+                <a href="#" class="collapse__sublink">Group</a>
+                <a href="#" class="collapse__sublink">Members</a>
+              </ul>
+            </div>
+
+            <a href="#" class="nav__link">
+              <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Analytics</span>
+            </a>
+            <div class="nav__link collapse">
+              <ion-icon name="people-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Team</span>
+
+              <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+              <ul class="collapse__menu">
+                <a href="#" class="collapse__sublink">Data</a>
+                <a href="#" class="collapse__sublink">Group</a>
+                <a href="#" class="collapse__sublink">Members</a>
+              </ul>
+            </div>
+            <a href="/dashboard/settings" class="nav__link">
+              <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Settings</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/users/logout" class="nav__link">
+          <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+          <span class="nav__name">Log Out</span>
+        </a>
+      </nav>
+    </div>
+    <main class="dash-main m1">
+      <div class="frame-grid">
+        <div class="page-grid grid1 grid2">
+          <div class="main-content">
+            <ul class="content-u-list">
+              <li class="li-c123">
+                  <div class="li-grid li-look">
+                    <div class="li-content">
+                      <div class="li-c1">
+                        <div class="li-text">
+                          <div class="csc-dyn-1 f-column margin_-0--4">
+                            <div class="csc-dyn-item"><p>You have 7 days left of your trial</p></div>
+                          </div>
+                        </div>
+                        <div class="li-button">
+                          <a data-polaris-unstyled="true" class="button-normal button-styled btn-1 smallbtn" href="#">
+                            <span class="button-content"><span class="button-text">Select a plan</span></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </li>
+            </ul>
+            <div class="onboarding-1">
+              <div class="page-el--1 page-el--2" style="transition: height 200ms ease-in 0s; height: 529px;">
+                <div class="page-el--2_1">
+                  <div class="card">
+                    <div class="card-section">
+                      <div class="onb-header">
+                        <div class="onb-h-title-container">
+                          <div class="onb-h-t-1">
+                            <h2 class="text-content smalltxt"><span>Get ready to sell online. Try these tips to get started.</span></h2>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="icon-box">
+                            <button
+                              class="button-normal icon-btn smallbtn icon-btn-1"
+                              type="button"
+                              tabindex="0"
+                              aria-controls="Polarispopover2"
+                              aria-owns="Polarispopover2"
+                              aria-expanded="false"
+                            >
+                              <span class="button-content">
+                                <span class="b-ic">
+                                  <span class="icon">
+                                    <svg viewBox="0 0 20 20" class="svg-icon" focusable="false" aria-hidden="true">
+                                      <path d="M6 10a2 2 0 1 1-4.001-.001A2 2 0 0 1 6 10zm6 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 12 10zm6 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 18 10z"></path>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="onboarding-main">
+                        <ul role="tablist" class="tablist">
+                          <li role="presentation" class="tab-l tb-1-active">
+                            <button
+                              role="tab"
+                              type="button"
+                              tabindex="0"
+                              class="tab-button tb-1-active"
+                              data-txt-target="#create-app-panel"
+                              >
+                              <span class="mr1_6">
+                                <span class="icon Polaris-Icon--colorPrimary_4ruww Polaris-Icon--isColored_uhqnf">
+                                  <svg viewBox="0 0 20 20" class="svg-icon" focusable="false" aria-hidden="true">
+                                    <path d="M10.293 1.293A1 1 0 0 1 11 1h7a1 1 0 0 1 1 1v7a1 1 0 0 1-.293.707l-9 9a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414l9-9zM15.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                                  </svg>
+                                </span>
+                              </span>
+                              <span class="tab-caption">Create app</span>
+                            </button>
+                          </li>
+                          <li role="presentation" class="tab-l">
+                            <button
+                              role="tab"
+                              type="button"
+                              tabindex="-1"
+                              class="tab-button"
+                              data-txt-target="#customize-app-panel"
+                              >
+                              <span class="mr1_6">
+                                <span class="icon Polaris-Icon--colorBase_nqlaq Polaris-Icon--isColored_uhqnf">
+                                  <svg viewBox="0 0 24 24" class="svg-icon" focusable="false" aria-hidden="true">
+                                    <path
+                                      d="M22 3.09a1 1 0 00-.65-1 1 1 0 00-.42-.09h-.07a17.35 17.35 0 00-13.2 10.07A4.92 4.92 0 007 12a5 5 0 00-5 5v4a1 1 0 001 1h4a5 5 0 005-5 4.9 4.9 0 00-.07-.66A17.35 17.35 0 0022 3.15v-.06zm-6.85 8.76a13 13 0 00-2.95-3.06 15.77 15.77 0 017.55-4.55 15.62 15.62 0 01-4.6 7.61zm-2.67 1.95q-.57.34-1.21.65a5 5 0 00-.33-.48l-.06-.08a5 5 0 00-.76-.76l-.12-.07a5 5 0 00-.49-.33q.32-.65.66-1.23.35-.59.72-1.12a12.1 12.1 0 012.63 2.75q-.52.36-1.09.7zM7 20H4v-3a3 3 0 113 3z"
+                                    ></path>
+                                  </svg>
+                                </span>
+                              </span>
+                              <span class="tab-caption">Customize theme</span>
+                            </button>
+                          </li>
+                          <li role="presentation" class="tab-l">
+                            <button
+                              role="tab"
+                              type="button"
+                              tabindex="-1"
+                              class="tab-button"
+                              data-txt-target="#domain-app-panel"
+                              >
+                              <span class="mr1_6">
+                                <span class="icon Polaris-Icon--colorBase_nqlaq Polaris-Icon--isColored_uhqnf">
+                                  <svg viewBox="0 0 20 20" class="svg-icon" focusable="false" aria-hidden="true">
+                                    <path
+                                      d="M13.903 8c.06.629.097 1.292.097 2a1 1 0 0 1-2 0c0-.713-.039-1.378-.105-2H8.092c-.139 1.33-.14 2.67-.004 4H10a1 1 0 0 1 0 2H8.416c.469 2.08 1.202 3.41 1.585 4 0 0 .789.013.926.002a1.008 1.008 0 0 1 1.07.925 1 1 0 0 1-.924 1.07C10.979 20.004 10 20 10 20 4.486 20 0 15.514 0 10 0 4.485 4.486 0 10 0s10 4.485 10 10c0 .379-.036.749-.079 1.116a1.001 1.001 0 0 1-1.987-.233c.035-.291.066-.583.066-.883 0-.692-.098-1.36-.263-2h-3.834zM9.988 2.036c-.386.606-1.1 1.931-1.564 3.964h3.137c-.466-2.033-1.185-3.358-1.573-3.964zM2.263 12h3.819a21.604 21.604 0 0 1-.095-1.996c0-.67.033-1.338.096-2.004h-3.82A7.946 7.946 0 0 0 2 10a7.96 7.96 0 0 0 .263 2zm.819 2a8.031 8.031 0 0 0 4.437 3.601A16.293 16.293 0 0 1 6.371 14H3.082zm3.291-8a16.235 16.235 0 0 1 1.15-3.603A8.03 8.03 0 0 0 3.082 6h3.291zm7.239 0h3.305a8.029 8.029 0 0 0-4.465-3.612A16.128 16.128 0 0 1 13.612 6z"
+                                    ></path>
+                                    <path d="M15.223 18.945l-2.55-5.61a.5.5 0 0 1 .662-.662l5.61 2.55a.5.5 0 0 1 .017.903l-1.742.87a.5.5 0 0 0-.223.224l-.871 1.742a.5.5 0 0 1-.903-.017z"></path>
+                                  </svg>
+                                </span>
+                              </span>
+                              <span class="tab-caption">Add domain</span>
+                            </button>
+                          </li>
+                        </ul>
+                        <div
+                          class="onboarding-content-grid tb-1-active"
+                          role="tabpanel"
+                          tabindex="-1"
+                          data-txt-content
+                          id="create-app-panel"
+                        >
+                          <div class="onboarding-content">
+                            <div class="onboarding-content--text">
+                              <div class="mb0_8">
+                                <h3 class="tip-hd"><span>Create your first app</span></h3>
+                              </div>
+                              
+                              <p>Add physical items, digital downloads, services, or anything else you dream up.</p>
+                              <div class="onboarding-content--button">
+                                <div class="csc-dyn-1 f-column">
+                                  <div class="csc-dyn-item">
+                                    <a data-polaris-unstyled="true" class="button-normal" href="/dashboard/apps/new">
+                                      <span class="button-content"><span class="button-text">Create app</span></span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="lm-box">
+                                <div class="mr0_8">
+                                  <span class="icon icon-c icon-c1">
+                                    <svg viewBox="0 0 20 20" class="svg-icon">
+                                      <path fill-rule="evenodd" d="M18 10a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-9 3a1 1 0 1 0 2 0v-2a1 1 0 1 0-2 0v2zm0-6a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                                <div class="lm-box--text">
+                                  <a target="_blank" href="https://www.google.com" rel="noopener noreferrer" data-polaris-unstyled="true" class="text-link">
+                                    Learn more about apps
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="_36o_f">
+                              <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/admin/home/onboarding/home-onboard-prod-incomplete-ce8aa00f08819937af17dff42020f5ac63e0ce48b11c34b3b9511d6ee017f7f2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="onboarding-content-grid"
+                          role="tabpanel"
+                          tabindex="-1"
+                          data-txt-content
+                          id="customize-app-panel"
+                        >
+                          <div class="onboarding-content">
+                            <div class="onboarding-content--text">
+                              <div class="mb0_8">
+                                <h3 class="tip-hd"><span>Customize app</span></h3>
+                              </div>
+                              
+                              <p>Customize the themes.</p>
+                              <div class="onboarding-content--button">
+                                <div class="csc-dyn-1 f-column">
+                                  <div class="csc-dyn-item">
+                                    <a data-polaris-unstyled="true" class="button-normal" href="/dashboard/apps/new">
+                                      <span class="button-content"><span class="button-text">Customize your app</span></span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="lm-box">
+                                <div class="mr0_8">
+                                  <span class="icon icon-c icon-c1">
+                                    <svg viewBox="0 0 20 20" class="svg-icon">
+                                      <path fill-rule="evenodd" d="M18 10a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-9 3a1 1 0 1 0 2 0v-2a1 1 0 1 0-2 0v2zm0-6a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                                <div class="lm-box--text">
+                                  <a target="_blank" href="https://www.google.com" rel="noopener noreferrer" data-polaris-unstyled="true" class="text-link">
+                                    Learn more about customizing
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="_36o_f">
+                              <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/admin/home/onboarding/home-onboard-prod-incomplete-ce8aa00f08819937af17dff42020f5ac63e0ce48b11c34b3b9511d6ee017f7f2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="onboarding-content-grid"
+                          role="tabpanel"
+                          tabindex="-1"
+                          data-txt-content
+                          id="domain-app-panel"
+                        >
+                          <div class="onboarding-content">
+                            <div class="onboarding-content--text">
+                              <div class="mb0_8">
+                                <h3 class="tip-hd"><span>Add domain to app</span></h3>
+                              </div>
+                              
+                              <p>Add physical items, digital downloads, services, or anything else you dream up.</p>
+                              <div class="onboarding-content--button">
+                                <div class="csc-dyn-1 f-column">
+                                  <div class="csc-dyn-item">
+                                    <a data-polaris-unstyled="true" class="button-normal" href="/dashboard/apps/new">
+                                      <span class="button-content"><span class="button-text">Add a domain</span></span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="lm-box">
+                                <div class="mr0_8">
+                                  <span class="icon icon-c icon-c1">
+                                    <svg viewBox="0 0 20 20" class="svg-icon">
+                                      <path fill-rule="evenodd" d="M18 10a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-9 3a1 1 0 1 0 2 0v-2a1 1 0 1 0-2 0v2zm0-6a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                                <div class="lm-box--text">
+                                  <a target="_blank" href="https://www.google.com" rel="noopener noreferrer" data-polaris-unstyled="true" class="text-link">
+                                    Learn more about domains
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="_36o_f">
+                              <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/admin/home/onboarding/home-onboard-prod-incomplete-ce8aa00f08819937af17dff42020f5ac63e0ce48b11c34b3b9511d6ee017f7f2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tips-container mb3_2">
+              <ul class="content-u-list">
+                <li class="li-c123">
+                  <div class="tip-box">
+                    <div class="page-el--1 page-el--2">
+                      <div class="page-el--2_1">
+                        <div class="tip-b-ic">
+                          <div>
+                            <div class="icon-box">
+                              <button
+                                class="button-normal icon-btn smallbtn icon-btn-1"
+                                type="button"
+                                tabindex="0"
+                                aria-controls="Polarispopover5"
+                                aria-owns="Polarispopover5"
+                                aria-expanded="false"
+                              >
+                                <span class="button-content">
+                                  <span class="b-ic">
+                                    <span class="icon">
+                                      <svg viewBox="0 0 20 20" class="svg-icon" focusable="false" aria-hidden="true">
+                                        <path d="M6 10a2 2 0 1 1-4.001-.001A2 2 0 0 1 6 10zm6 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 12 10zm6 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 18 10z"></path>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="card">
+                            <div class="">
+                              <div class="card-header">
+                                <div class="tip-text">
+                                  <div class="csc1--text-2 csc1--text-2sp">
+                                    <h2 class="tip-hd"><span>Tipping at checkout is now available for your online store</span></h2>
+                                    <p>With tipping at checkout, your customers have the option to tip a percentage of their total order or custom amount.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tip-btn">
+                              <div class="csc-dyn-1 j-flexstart al-flexend f-nowrap">
+                                <div class="csc-dyn-item f-11a">
+                                  <div class="btn-group">
+                                    <div class="btn-group--item">
+                                      <a data-polaris-unstyled="true" class="button-normal" href="/admin/settings/checkout#tipping">
+                                        <span class="button-content"><span class="button-text">Add online tipping</span></span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="li-c123">
+                  <div class="tip-box" id="gid://shopify/HomeCard/en-youtube-channel-ongoing-2020?analytics_group=CustomFeedCard">
+                    <div class="page-el--1 page-el--2">
+                      <div class="page-el--2_1">
+                        <div class="tip-b-ic">
+                          <div>
+                            <div class="icon-box">
+                              <button
+                                class="button-normal icon-btn smallbtn icon-btn-1"
+                                type="button"
+                                tabindex="0"
+                              >
+                                <span class="button-content">
+                                  <span class="b-ic">
+                                    <span class="icon">
+                                      <svg viewBox="0 0 20 20" class="svg-icon" focusable="false" aria-hidden="true">
+                                        <path d="M6 10a2 2 0 1 1-4.001-.001A2 2 0 0 1 6 10zm6 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 12 10zm6 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 18 10z"></path>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="card">
+                            <div class="">
+                              <div class="card-header">
+                                <div class="tip-text">
+                                  <div class="csc1--text-2 csc1--text-2sp">
+                                    <h2 class="tip-hd"><span>Get to know Shopify with guided video tutorials</span></h2>
+                                    <p>Keep learning with new and upcoming videos by subscribing to the Shopify Help Center YouTube Channel.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tip-btn">
+                              <div class="csc-dyn-1 j-flexstart al-flexend f-nowrap">
+                                <div class="csc-dyn-item f-11a">
+                                  <div class="btn-group">
+                                    <div class="btn-group--item">
+                                      <a
+                                        target="_blank"
+                                        href="https://www.youtube.com/channel/UCSG_dVp-hi_hWP-Z7DlpRgQ?utm_source=home-card&amp;utm_medium=standard-post"
+                                        rel="noopener noreferrer"
+                                        data-polaris-unstyled="true"
+                                        class="button-normal"
+                                      >
+                                        <span class="button-content"><span class="button-text">Explore YouTube channel</span></span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- ===== MAIN JS ===== -->
+    <script src="/static/dash/js/main.js"></script>
+  </body>
+</html>

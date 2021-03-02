@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="/static/dash/css/styles-structure--orientation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/dash/css/styles-components.css"
+    />
+    <link rel="stylesheet" href="/static/fontawesome-free-5.15.1-web/css/all.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Create app</title>
+  </head>
+  <body id="body-pd" class="body-pd">
+    <div class="l-navbar expander" id="navbar">
+      <nav class="nav">
+        <div>
+          <div class="nav__brand">
+            <ion-icon
+              name="menu-outline"
+              class="nav__toggle"
+              id="nav-toggle"
+            ></ion-icon>
+            <a href="#" class="nav__logo">Bedimcode</a>
+          </div>
+          <div class="nav__list">
+            <a href="/dashboard" class="nav__link">
+              <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Home</span>
+            </a>
+
+            <div class="nav__link collapse active">
+              <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Apps</span>
+
+              <ion-icon
+                name="chevron-down-outline"
+                class="collapse__link"
+              ></ion-icon>
+
+              <ul class="collapse__menu">
+                <a href="/dashboard/apps" class="collapse__sublink">Data</a>
+                <a href="#" class="collapse__sublink">Group</a>
+                <a href="#" class="collapse__sublink">Members</a>
+              </ul>
+            </div>
+
+            <a href="#" class="nav__link">
+              <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Analytics</span>
+            </a>
+            <div class="nav__link collapse">
+              <ion-icon name="people-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Team</span>
+
+              <ion-icon
+                name="chevron-down-outline"
+                class="collapse__link"
+              ></ion-icon>
+
+              <ul class="collapse__menu">
+                <a href="#" class="collapse__sublink">Data</a>
+                <a href="#" class="collapse__sublink">Group</a>
+                <a href="#" class="collapse__sublink">Members</a>
+              </ul>
+            </div>
+            <a href="/dashboard/settings" class="nav__link">
+              <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+              <span class="nav__name">Settings</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/users/logout" class="nav__link">
+          <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+          <span class="nav__name">Log Out</span>
+        </a>
+      </nav>
+    </div>
+    <main class="dash-main m1">
+      <div class="frame-grid">
+        <div class="page-grid grid1 grid2">
+          <div class="dm-header dm-h-1 dm-h-2">
+            <div class="header-row hr-1">
+              <div class="hr-wrapper">
+                <div>
+                  <div class="hr-title-box">
+                    <div class="hr-title-box-1">
+                      <h1 class="hr-title">Create a new app</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dm-main-page--content">
+            <div class="pc--1 pc--2">
+              <div class="page-section">
+                <form action='/dashboard/apps/' method="POST">
+                  <div class="card">
+                      <div class="card-header--stack">
+                          <div class="csc-dyn-1 al-baseline">
+                              <div class="csc-dyn-item f-11a">
+                                  <h2 class="tip-hd">Add a name to your app</h2>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-section">
+                          <div class="label-input-box">
+                              <div class="input-box">
+                                  <div class="ib--item ib--item_1">
+                                    <div class="ib-text-area">
+                                      <input class="text-area--input" data-input="app-name" value="<%= app.title %>" placeholder="e.g Best Hotel ever" maxlength="100" autocomplete="off">
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- ===== MAIN JS ===== -->
+    <script src="/static/dash/js/main.js"></script>
+  </body>
+</html>
